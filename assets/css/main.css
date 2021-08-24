@@ -1,4 +1,14 @@
+@font-face {
+    font-family: "globalFont";
+    src: url('../fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
 body {
+    font-family: 'globalFont', Fallback, sans-serif;
 }
 
 ul {
@@ -9,18 +19,31 @@ ul {
     margin-right: 50px;
 }
 
+#logo {
+    float: left;
+}
+
+#logo p{
+    padding-left: 10em;
+}
+
+#nav {
+    padding-right: 10em;
+}
+
 li {
     float: right;
 }
 
 li a {
     display: block;
-    color: rgb(70, 70, 70);
+    color: rgb(44, 44, 44);
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+    color: rgb(0, 0, 0);
+    background-color: rgb(220, 220, 220);
 }
