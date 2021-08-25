@@ -6,9 +6,20 @@
          url('../fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
          url('../fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
-
-body {
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    scroll-behavior: smooth;
     font-family: 'globalFont', Fallback, sans-serif;
+}* {
+    margin: 0px;
+}::-webkit-scrollbar {
+    width: 10px;
+}::-webkit-scrollbar-track {
+    background-color: #dddcdc
+}::-webkit-scrollbar-thumb { 
+    background-color: #8a8a8a;
 }
 
 ul {
@@ -16,11 +27,14 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    top: 0px;
     margin-right: 50px;
 }
 
 #logo {
     float: left;
+    margin: 0;
+    top: 0px;
 }
 
 #logo p{
@@ -29,6 +43,8 @@ ul {
 
 #nav {
     padding-right: 10em;
+    top: 0px;
+    margin: 0;
 }
 
 li {
@@ -46,4 +62,12 @@ li a {
 li a:hover {
     color: rgb(0, 0, 0);
     background-color: rgb(220, 220, 220);
+}
+
+#line {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-top: 2px solid rgb(157, 157, 157);
 }
