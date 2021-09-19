@@ -1,0 +1,45 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(22, 22, 22);
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    background-color: rgb(252, 252, 252);
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 20px, 1px 1px 20px #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.center a{
+	text-decoration: none;
+	color: rgb(255, 120, 0);
+	transition: 0.5s;
+}
+
+.center a:hover{
+	color: rgb(0, 120, 255);
+}
+
+.center h1{
+    font-size: 30px;
+    font-family: 'Open Sans';
+    text-align:center;
+    color: rgb(22, 22, 22);
+    padding: 0px;
+    margin: 5px 0px;
+}
+
+.center h2{
+    font-size: 20px;
+    font-family: 'Open Sans';
+    text-align:center;
+    color: rgb(22, 22, 22);
+    padding: 0px;
+    margin: 5px 0px;
+}
