@@ -12,7 +12,7 @@ const Navbar = ({setDarkMode, darkMode}) => {
       
       <a
         className="resume-button"
-        href="https://james.org.nz/resume.pdf"
+        href="https://drive.google.com/file/d/18v0QBSwEHPv7Yq9h9mKBosL6wOA64QBf/view?usp=sharing"
       >
         Resume
       </a>
