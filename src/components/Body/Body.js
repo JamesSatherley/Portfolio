@@ -41,7 +41,7 @@ const Body = ({darkMode, isMobile}) => {
           </div>
         </>
       )}
-      <img className='pic' src={Pic} alt='developer' style={{border: `solid 5px ${darkMode ? 'rgb(229 231 235 / 1)': 'rgb(30 30 30 / 1)'}`}}/>
+      <img className='pic' src={Pic} alt='developer' style={{border: `solid 5px ${darkMode ? 'rgb(229 231 235 / 1)': 'rgb(30 30 30 / 1)'}`, width:isMobile ? '12rem' : '24rem', height:isMobile ? '18rem' : '24rem'}}/>
     </div>
   )
 }
