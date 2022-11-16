@@ -12,6 +12,7 @@ const App = () => {
     useEffect(() => {
         setDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches)
         window.addEventListener("resize", handleResize)
+        handleResize()
     }, [setDarkMode])
 
     const handleResize = () => {
