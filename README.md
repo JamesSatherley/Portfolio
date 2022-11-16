@@ -1,2 +1,2 @@
-# portfolioWebsite
-This is the source files for my website
+# Portfolio
+Going through an overhaul. Hosted [here](https://james.org.nz/)
