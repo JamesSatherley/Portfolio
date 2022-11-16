@@ -15,19 +15,20 @@ const App = () => {
     }, [setDarkMode])
 
     const handleResize = () => {
-        if (window.innerWidth < 850 && window.innerWidth >= 500) {
+        if (window.innerWidth < 850) {
             setIsMobile(true)
         } else {
             setIsMobile(false)
         }
     }
+    console.log(isMobile)
 
     return (
         <>
             <Helmet>
             <title>{"James' Portfolio"}</title>
             </Helmet>
-            <div className={darkMode ? "main dark" : "main"}>
+            <div className={isMobile? darkMode ? "mainMobile dark" : "mainMobile" : darkMode ? "main dark" : "main"}>
                 <div className="height">
                     <Navbar setDarkMode={setDarkMode} darkMode={darkMode}></Navbar>
                     <Body darkMode={darkMode} isMobile={isMobile}/>
