@@ -15,8 +15,8 @@ const Body = ({darkMode, isMobile}) => {
   return (
     <div className='bodyHolder'>
       <h1 className='name' style={{color: darkMode ? 'rgb(45 212 191 / 1)': 'rgb(20 150 120 / 1)'}}>James Satherley</h1>
-      <h1 className='job' style={{color: darkMode ? 'rgb(255 255 255 / 1)': 'rgb(15 15 15 / 1)'}}>Developer and Freelancer</h1>
-      <h1 className='blurb' style={{color: darkMode ? 'rgb(229 231 235 / 1)': 'rgb(30 30 30 / 1)'}}>I want to work for you.<br/> Contact me below and lets get started!</h1>
+      <h1 className='job' style={{color: darkMode ? 'rgb(255 255 255 / 1)': 'rgb(15 15 15 / 1)'}}>Software Engineer</h1>
+      <h1 className='blurb' style={{color: darkMode ? 'rgb(229 231 235 / 1)': 'rgb(30 30 30 / 1)'}}>I want to work with you. Contact me below!</h1>
       {!isMobile && (
         <div className='iconBox' style={{color: darkMode ? 'rgb(156 163 175 / 1)': 'rgb(75 75 75 / 1)'}}>
           <AiFillTwitterCircle className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {window.open('https://twitter.com/jamessatherley')}}/>
