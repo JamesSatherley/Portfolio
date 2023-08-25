@@ -13,11 +13,6 @@ const App = () => {
         setDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches)
         window.addEventListener("resize", handleResize)
         handleResize()
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', 'G-8DMHL0ZY6D');
     }, [setDarkMode])
 
     const handleResize = () => {
