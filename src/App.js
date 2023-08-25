@@ -5,6 +5,9 @@ import Body from "./components/Body/Body";
 import './App.scss';
 import Footer from "./components/Footer/Footer";
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-8DMHL0ZY6D";
+ReactGA.initialize(TRACKING_ID);
 const App = () => {
     const [darkMode, setDarkMode] = useState(false);
     const [isMobile, setIsMobile] = useState(false)
