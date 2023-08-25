@@ -22,27 +22,27 @@ const Body = ({darkMode, isMobile}) => {
       {!isMobile && (
         <div className='iconBox' style={{color: darkMode ? 'rgb(156 163 175 / 1)': 'rgb(75 75 75 / 1)'}}>
           <AiFillTwitterCircle className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
-            gaEventTracker('dark mode');
+            gaEventTracker('twitter click');
             window.open('https://twitter.com/jamessatherley');
           }}/>
           <AiFillLinkedin className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
-            gaEventTracker('dark mode');
+            gaEventTracker('linked in click');
             window.open('https://www.linkedin.com/in/jamessatherley/');
           }}/>
           <AiFillGithub className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
-            gaEventTracker('dark mode');
+            gaEventTracker('github click');
             window.open('https://github.com/JamesSatherley');
           }}/>
           <AiFillGitlab className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
-            gaEventTracker('dark mode');
+            gaEventTracker('gitlab click');
             window.open('https://gitlab.com/JamesSatherley');
           }}/>
           <AiFillMail className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
-            gaEventTracker('dark mode');
+            gaEventTracker('mail click');
             window.open('mailto:contact@james.org.nz');
           }}/>
           <AiFillPhone className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
-            gaEventTracker('dark mode');
+            gaEventTracker('phone click');
             window.open('tel:0225457881');
           }}/>
         </div>
@@ -50,14 +50,32 @@ const Body = ({darkMode, isMobile}) => {
       {isMobile && (
         <>
           <div className='iconBox' style={{color: darkMode ? 'rgb(156 163 175 / 1)': 'rgb(75 75 75 / 1)'}}>
-            <AiFillTwitterCircle className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {window.open('https://twitter.com/jamessatherley')}}/>
-            <AiFillLinkedin className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {window.open('https://www.linkedin.com/in/jamessatherley/')}}/>
-            <AiFillGithub className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {window.open('https://github.com/JamesSatherley')}}/>
+            <AiFillTwitterCircle className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
+              gaEventTracker('twitter click mobile');
+              window.open('https://twitter.com/jamessatherley');
+            }}/>
+            <AiFillLinkedin className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
+              gaEventTracker('linked in click mobile');
+              window.open('https://www.linkedin.com/in/jamessatherley/');
+            }}/>
+            <AiFillGithub className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
+              gaEventTracker('github click mobile');
+              window.open('https://github.com/JamesSatherley');
+            }}/>
           </div>
           <div className='iconBox' style={{color: darkMode ? 'rgb(156 163 175 / 1)': 'rgb(75 75 75 / 1)'}}>
-            <AiFillGitlab className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {window.open('https://gitlab.com/JamesSatherley')}}/>
-            <AiFillMail className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {window.open('mailto:contact@james.org.nz')}}/>
-            <AiFillPhone className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {window.open('tel:0225457881')}}/>
+            <AiFillGitlab className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
+              gaEventTracker('gitlab click mobile');
+              window.open('https://gitlab.com/JamesSatherley');
+            }}/>
+            <AiFillMail className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
+              gaEventTracker('mail click mobile');
+              window.open('mailto:contact@james.org.nz');
+            }}/>
+            <AiFillPhone className={darkMode?"bodyIcon":"bodyIconDark"} onClick={() => {
+              gaEventTracker('phone click mobile');
+              window.open('tel:0225457881');
+            }}/>
           </div>
         </>
       )}
