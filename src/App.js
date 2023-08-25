@@ -25,7 +25,6 @@ const App = () => {
             setIsMobile(false)
         }
     }
-    console.log(isMobile)
 
     return (
         <>
