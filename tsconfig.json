@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "ES6", // Specifies the ECMAScript version to target (ES6 or higher recommended)
+        "module": "CommonJS", // Specifies the module system (CommonJS for Node.js)
+        "outDir": "./dist", // Output directory for compiled JavaScript files
+        "rootDir": "./src", // Root directory of your TypeScript source files
+        "strict": true, // Enforces strict type checking
+        "esModuleInterop": true, // Allows default imports from CommonJS modules
+        "forceConsistentCasingInFileNames": true, // Ensures consistent file name casing (important for case-sensitive file systems)
+        "noImplicitAny": true, // Flags implicit any types as errors (strong typing)
+        "strictNullChecks": true, // Enforces null checks to prevent common errors
+        "strictFunctionTypes": true, // Ensures function parameter types are strictly checked
+        "strictPropertyInitialization": true, // Requires properties to be initialized in constructors
+        "strictBindCallApply": true, // Enforces strict checking for bind, call, and apply methods
+        "noUnusedLocals": true, // Flags unused local variables as errors
+        "noUnusedParameters": true, // Flags unused function parameters as errors
+        "noImplicitReturns": true, // Flags missing return statements in functions
+        "noFallthroughCasesInSwitch": true, // Flags fallthrough cases in switch statements
+        "baseUrl": "./", // Base URL for module resolution (set to your project root)
+        "paths": {
+            "*": ["./src/*"] // Path mapping to resolve modules relative to the rootDir
+        }
+    },
+    "include": ["src", "src/declaration.d.ts"]
+}
