@@ -48,14 +48,12 @@ const Body = ({ darkMode, isMobile }) => {
             color: darkMode ? "rgb(156 163 175 / 1)" : "rgb(75 75 75 / 1)",
           }}
         >
-          <IconButton
-            type="button"
+          <AiFillTwitterCircle
             className={darkMode ? "bodyIcon" : "bodyIconDark"}
             onClick={() => {
               gaEventTracker("twitter click");
               window.open("https://twitter.com/jamessatherley");
             }}
-            icon={AiFillTwitterCircle}
           />
           <AiFillLinkedin
             className={darkMode ? "bodyIcon" : "bodyIconDark"}
