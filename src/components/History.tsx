@@ -4,7 +4,7 @@ import Me from '../assets/me.png';
 const History: React.FC = () => {
     return (
         <div className="flex justify-center items-center font-main font-light h-screen space-x-40">
-            <img src={Me} className="h-1/2" alt="Picture of Me" />
+            <img src={Me} className="h-1/2" alt="Pic of Me" />
             <div className="mb-6">
                 <span className="text-3xl text-secondary dark:text-dark-secondary w-full flex justify-center mb-12 pr-12">
                     HISTORY
