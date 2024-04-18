@@ -2,9 +2,9 @@ import React from 'react';
 import Header from './Header';
 import Intro from './Intro';
 import Art from './Art';
-import About from './History';
+import History from './History';
+import AboutSection from './AboutSection';
 import Footer from './Footer';
-import ArtAlso from './ArtAlso';
 
 const Body: React.FC = () => {
     return (
@@ -18,12 +18,12 @@ const Body: React.FC = () => {
                     <Art />
                 </div>
             </div>
+            <AboutSection />
             <div>
-                <About />
+                <History />
             </div>
             <div>
                 <Footer />
-                <ArtAlso />
             </div>
         </div>
     );

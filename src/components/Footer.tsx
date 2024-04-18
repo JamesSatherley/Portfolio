@@ -4,6 +4,7 @@ import { FaEnvelopeSquare } from 'react-icons/fa';
 import { FaSquarePhone } from 'react-icons/fa6';
 import { FaTwitterSquare } from 'react-icons/fa';
 import { TbSquareArrowUpFilled } from 'react-icons/tb';
+import { scrollToTop } from './scrollUtil';
 
 const Footer: React.FC = () => {
     const [line1Style, setLine1Style] = useState({});
@@ -38,26 +39,21 @@ const Footer: React.FC = () => {
     return (
         <div>
             <div className="flex justify-center font-main font-light space-x-10">
-                <FaEnvelopeSquare
-                    href='mailto:jamesrsatherley@gmail.com?subject="Hey!"'
-                    className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors"
-                />
-                <FaLinkedin
-                    href="https://www.linkedin.com/in/jamessatherley/"
-                    className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors"
-                />
-                <TbSquareArrowUpFilled
-                    href="#top"
-                    className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors"
-                />
-                <FaSquarePhone
-                    href="tel:0225457881"
-                    className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors"
-                />
-                <FaTwitterSquare
-                    href="https://twitter.com/jamessatherley"
-                    className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors"
-                />
+                <a href='mailto:jamesrsatherley@gmail.com?subject="Hey!"'>
+                    <FaEnvelopeSquare className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors" />
+                </a>
+                <a href="https://www.linkedin.com/in/jamessatherley/" rel="noreferrer" target="_blank">
+                    <FaLinkedin className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors" />
+                </a>
+                <a href="#top" onClick={(e) => scrollToTop(e, 0)}>
+                    <TbSquareArrowUpFilled className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors" />
+                </a>
+                <a href="tel:0225457881" rel="noreferrer" target="_blank">
+                    <FaSquarePhone className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors" />
+                </a>
+                <a href="https://twitter.com/jamessatherley" rel="noreferrer" target="_blank">
+                    <FaTwitterSquare className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors" />
+                </a>
             </div>
             <div className="flex items-center flex-col mt-10">
                 <div

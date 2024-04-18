@@ -1,10 +1,37 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Me from '../assets/me.png';
 
 const History: React.FC = () => {
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    const imgRef = useRef<HTMLImageElement>(null);
+
+    const handleMouseMove = (e: any) => {
+        if (imgRef.current) {
+            const { left, top, width, height } = imgRef.current.getBoundingClientRect();
+            const x = (((e.clientX - left) / width) * 100 - 50) / 8; // Normalize and shift the origin to the center
+            const y = (((e.clientY - top) / height) * 100 - 50) / 8; // Normalize and shift the origin to the center
+
+            setMousePosition({ x, y });
+        }
+    };
+
     return (
-        <div className="flex justify-center items-center font-main font-light h-screen space-x-40">
-            <img src={Me} className="h-1/2" alt="Pic of Me" />
+        <div
+            onMouseMove={handleMouseMove}
+            className="flex justify-center items-center font-main font-light h-screen space-x-40"
+        >
+            <div className="flex items-center" style={{ perspective: '1000px', height: '100%' }}>
+                <img
+                    ref={imgRef}
+                    src={Me}
+                    className="h-1/2"
+                    alt="Pic of Me"
+                    style={{
+                        transform: `rotateY(${mousePosition.x / 10}deg) rotateX(${-mousePosition.y / 10}deg)`,
+                        transition: 'transform 0.1s',
+                    }}
+                />
+            </div>
             <div className="mb-6">
                 <span className="text-3xl text-secondary dark:text-dark-secondary w-full flex justify-center mb-12 pr-12">
                     HISTORY
@@ -55,6 +82,8 @@ const History: React.FC = () => {
                             <a
                                 className="text-primary dark:text-dark-primary border-b border-dashed"
                                 href="https://www.levno.com/"
+                                rel="noreferrer"
+                                target="_blank"
                             >
                                 Levno
                             </a>{' '}
@@ -65,6 +94,8 @@ const History: React.FC = () => {
                             <a
                                 className="text-primary dark:text-dark-primary border-b border-dashed"
                                 href="https://accessitlibrary.com/"
+                                rel="noreferrer"
+                                target="_blank"
                             >
                                 Accessit
                             </a>
@@ -77,6 +108,8 @@ const History: React.FC = () => {
                             <a
                                 className="text-primary dark:text-dark-primary border-b border-dashed"
                                 href="https://www.insourcerecruit.com/"
+                                rel="noreferrer"
+                                target="_blank"
                             >
                                 Insource
                             </a>
@@ -89,6 +122,8 @@ const History: React.FC = () => {
                             <a
                                 className="text-primary dark:text-dark-primary border-b border-dashed"
                                 href="https://www.microsoft.com"
+                                rel="noreferrer"
+                                target="_blank"
                             >
                                 Microsoft
                             </a>

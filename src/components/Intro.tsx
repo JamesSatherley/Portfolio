@@ -1,20 +1,10 @@
-import React, { useState } from 'react';
-import { CiDesktopMouse2 } from 'react-icons/ci';
+import React from 'react';
+import JumpingMouse from './JumpingMouse';
+import { scrollToTop } from './scrollUtil';
 
 const Intro: React.FC = () => {
-    const [hover, setHover] = useState(false);
-
-    const handleMouseOver = () => {
-        if (!hover) {
-            setHover(true);
-            setTimeout(() => {
-                setHover(false);
-            }, 5000);
-        }
-    };
-
     return (
-        <div className="flex justify-center font-main font-light">
+        <div id="main" className="flex justify-center font-main font-light">
             <div className="flex flex-col">
                 <span className="text-4xl text-secondary dark:text-dark-secondary ">
                     Hey, I'm <span className="text-primary dark:text-dark-primary">James</span>
@@ -28,6 +18,8 @@ const Intro: React.FC = () => {
                     <a
                         className="text-primary dark:text-dark-primary border-b border-dashed"
                         href="https://www.levno.com/"
+                        rel="noreferrer"
+                        target="_blank"
                     >
                         Levno
                     </a>
@@ -36,28 +28,10 @@ const Intro: React.FC = () => {
                     This site is <span className=" text-primary dark:text-dark-primary">Under Development</span>
                 </span>
                 <div className="flex justify-center pr-[30%] pt-[80%]">
-                    <CiDesktopMouse2
-                        onMouseMove={handleMouseOver}
-                        className={`text-primary dark:text-dark-primary text-3xl ${hover ? 'icon' : ''}`}
-                    />
+                    <a onClick={(e) => scrollToTop(e, 1)} href="#about">
+                        <JumpingMouse />
+                    </a>
                 </div>
-                <style>
-                    {`
-                    .icon {
-                        animation: upAndDown 1s ease-in-out infinite;
-                    }
-
-                    @keyframes upAndDown {
-                        0%, 100% {
-                          transform: translateY(0);
-                        }
-                        50% {
-                          transform: translateY(-15px);
-                        }
-                      }
-                    }
-                    `}
-                </style>
             </div>
         </div>
     );
