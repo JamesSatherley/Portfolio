@@ -23,7 +23,7 @@ const SpinningCube: React.FC = () => {
 
     return (
         <div id="about" className="flex flex-row" onMouseMove={handleMouseMove}>
-            <div className="w-[40%] ml-[10%]">
+            <div className="w-[40%] ml-[10%] hidden 2xl:block">
                 <div
                     className="scene w-full h-screen flex justify-center items-center"
                     style={{ perspective: '600px' }}
@@ -45,29 +45,45 @@ const SpinningCube: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-[40%] mr-[10%] flex flex-col justify-center items-center">
+            <div className="2xl:mr-[10%] mb-[20%] 2xl:mb-0 flex flex-col justify-center items-center w-full 2xl:w-[40%]">
                 <span className="text-3xl text-secondary dark:text-dark-secondary w-full flex justify-center mb-12">
                     ABOUT
                 </span>
-                <div className="text-center flex flex-col w-1/2">
-                    <span className="text-lg pt-3 text-secondary dark:text-dark-secondary">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a turpis in sapien lobortis
-                        efficitur a quis enim. Nam rutrum sollicitudin libero, eget faucibus metus cursus a. Duis in
-                        ullamcorper turpis. Vestibulum aliquam justo sed volutpat vestibulum. Pellentesque commodo
-                        maximus viverra
+                <div className="text-center flex flex-col w-4/5 ">
+                    <span className="text-lg pt-5 text-secondary dark:text-dark-secondary">
+                        I am a <span className=" text-primary dark:text-dark-primary">Software Engineer</span> with a
+                        strong passion for technology. I have skills crafted from creating custom{' '}
+                        <span className=" text-primary dark:text-dark-primary">
+                            software solutions, personal hardware projects, and years of professional experience
+                        </span>{' '}
+                        which allow me to bring a versatile skill set to{' '}
+                        <span className=" text-primary dark:text-dark-primary">
+                            innovate and solve complex problems
+                        </span>
+                        .
                     </span>
-                    <span className="text-lg pt-3 text-secondary dark:text-dark-secondary">
-                        Fusce suscipit, diam in viverra tincidunt, arcu dui venenatis ipsum, ut rhoncus eros justo id
-                        nunc. In metus urna, tristique id dapibus at, gravida vel nunc. Donec aliquam justo ex, a
-                        ultrices dui tempor sed. Mauris dignissim, arcu eget feugiat pellentesque, est orci pretium
-                        ligula, eu tristique
+                    <span className="text-lg pt-5 text-secondary dark:text-dark-secondary">
+                        Throughout my career, I've developed a broad range of technical skills across various domains,
+                        including{' '}
+                        <span className=" text-primary dark:text-dark-primary">
+                            full-stack web development, penetration testing, and the creation of libraries and SDKs
+                        </span>{' '}
+                        in many languages, not limited to{' '}
+                        <span className=" text-primary dark:text-dark-primary">
+                            Java&nbsp;/&nbsp;Typescript, C++, Java and Python
+                        </span>
+                        .
                     </span>
-                    <span className="text-lg pt-3 text-secondary dark:text-dark-secondary">
-                        est lectus posuere tellus. Aenean luctus molestie orci. Fusce elementum aliquet diam, non
-                        suscipit metus tempor nec. Proin facilisis tellus
+                    <span className="text-lg pt-5 text-secondary dark:text-dark-secondary">
+                        Away from the keyboard, I love to catch a bit of sun. Whether it's{' '}
+                        <span className=" text-primary dark:text-dark-primary">
+                            hiking, hunting, or simply exploring our great backyard
+                        </span>
+                        , I find this the perfect way to{' '}
+                        <span className=" text-primary dark:text-dark-primary">escape and recharge</span>.
                     </span>
                 </div>
-                <div className="mt-[10%]">
+                <div className="mt-[10%] hidden 2xl:block">
                     <a onClick={(e) => scrollToTop(e, 2)} href="#about">
                         <JumpingMouse />
                     </a>

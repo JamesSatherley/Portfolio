@@ -18,9 +18,9 @@ const History: React.FC = () => {
     return (
         <div
             onMouseMove={handleMouseMove}
-            className="flex justify-center items-center font-main font-light h-screen space-x-40"
+            className="flex justify-center text-center 2xl:text-left items-center font-main 2xl:font-light h-screen 2xl:space-x-40"
         >
-            <div className="flex items-center" style={{ perspective: '1000px', height: '100%' }}>
+            <div className="hidden items-center 2xl:flex" style={{ perspective: '1000px', height: '100%' }}>
                 <img
                     ref={imgRef}
                     src={Me}
@@ -32,12 +32,12 @@ const History: React.FC = () => {
                     }}
                 />
             </div>
-            <div className="mb-6">
-                <span className="text-3xl text-secondary dark:text-dark-secondary w-full flex justify-center mb-12 pr-12">
+            <div className="2xl:mb-6">
+                <span className="text-3xl text-secondary dark:text-dark-secondary w-full flex justify-center mb-12 2xl:pr-12">
                     HISTORY
                 </span>
-                <div className="flex justify-center space-x-14">
-                    <div className="flex flex-col items-center">
+                <div className="flex justify-center 2xl:space-x-14">
+                    <div className="hidden flex-col items-center 2xl:flex">
                         <div className="mt-[30px] flex flex-row">
                             <div className="w-56 text-secondary dark:text-dark-secondary text-about">
                                 Sep, 2017 - Current
@@ -75,10 +75,9 @@ const History: React.FC = () => {
                             <div className="border-2 rounded-full h-5 w-5 border-primary dark:border-dark-primary shadow-about dark:shadow-dark-about" />
                         </div>
                     </div>
-                    <div className=" flex flex-col ">
+                    <div className="flex flex-col 2xl:w-[24rem] 2xl:px-0 px-4">
                         <span className="text-lg pt-3 text-secondary dark:text-dark-secondary">
-                            Currently, I'm developing both internal and <br />
-                            external tools for{' '}
+                            Currently, I'm developing both internal and external tools for{' '}
                             <a
                                 className="text-primary dark:text-dark-primary border-b border-dashed"
                                 href="https://www.levno.com/"
@@ -99,9 +98,8 @@ const History: React.FC = () => {
                             >
                                 Accessit
                             </a>
-                            , I have managed <br />
-                            internal componentary libraries used at
-                            <br /> scale in client-facing and interal applications.
+                            , I have managed internal componentary libraries used at scale in client-facing and interal
+                            applications.
                         </span>
                         <span className="text-lg pt-3 text-secondary dark:text-dark-secondary">
                             Further, with{' '}
@@ -113,9 +111,8 @@ const History: React.FC = () => {
                             >
                                 Insource
                             </a>
-                            , I managed a penertration <br />
-                            testing project, followed by development on a <br />
-                            React, PHP web appliation.
+                            , I managed a penertration testing project, followed by development on a React, PHP web
+                            appliation.
                         </span>
                         <span className="text-lg pt-3 text-secondary dark:text-dark-secondary">
                             Lastly, my Capstone project with{' '}
@@ -128,10 +125,9 @@ const History: React.FC = () => {
                                 Microsoft
                             </a>
                             <br />
-                            involved managing dependancy reliance in <br />
-                            Azure's Java SDK.
+                            involved managing dependancy reliance in Azure's Java SDK.
                         </span>
-                        <span className="text-xl pt-4 text-secondary dark:text-dark-secondary">
+                        <span className="text-lg pt-8 text-secondary dark:text-dark-secondary">
                             Want to get in touch?{' '}
                             <a
                                 className="text-primary dark:text-dark-primary border-b border-dashed"

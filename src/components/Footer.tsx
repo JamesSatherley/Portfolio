@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                     <FaTwitterSquare className="text-4xl text-secondary dark:text-dark-secondary hover:text-primary hover:dark:text-dark-primary transition-colors" />
                 </a>
             </div>
-            <div className="flex items-center flex-col mt-10">
+            <div className="hidden items-center flex-col mt-10 2xl:flex">
                 <div
                     className="w-[600px] h-0 border-b-2 border-secondary dark:border-dark-secondary shadow-about dark:shadow-dark-about-tiny"
                     style={line1Style}

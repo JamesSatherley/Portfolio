@@ -4,7 +4,7 @@ import { scrollToTop } from './scrollUtil';
 
 const Intro: React.FC = () => {
     return (
-        <div id="main" className="flex justify-center font-main font-light">
+        <div id="main" className="flex justify-center font-main font-light text-center 2xl:text-left">
             <div className="flex flex-col">
                 <span className="text-4xl text-secondary dark:text-dark-secondary ">
                     Hey, I'm <span className="text-primary dark:text-dark-primary">James</span>
@@ -24,10 +24,10 @@ const Intro: React.FC = () => {
                         Levno
                     </a>
                 </span>
-                <span className="text-sm pt-3 text-secondary dark:text-dark-secondary">
+                {/* <span className="text-sm pt-3 text-secondary dark:text-dark-secondary">
                     This site is <span className=" text-primary dark:text-dark-primary">Under Development</span>
-                </span>
-                <div className="flex justify-center pr-[30%] pt-[80%]">
+                </span> */}
+                <div className="flex justify-center 2xl:pr-[30%] pt-[80%]">
                     <a onClick={(e) => scrollToTop(e, 1)} href="#about">
                         <JumpingMouse />
                     </a>

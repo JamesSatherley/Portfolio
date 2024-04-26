@@ -11,10 +11,10 @@ const Body: React.FC = () => {
         <div>
             <Header />
             <div className="px-[6%] py-[3%] flex flex-row justify-between">
-                <div className="pt-[15%] pl-[12%]">
+                <div className="2xl:pt-[15%] 2xl:pl-[12%] pt-[50%] pb-[25%] 2xl:pb-[0%]">
                     <Intro />
                 </div>
-                <div>
+                <div className="hidden 2xl:block">
                     <Art />
                 </div>
             </div>
