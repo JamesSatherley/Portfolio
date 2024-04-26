@@ -27,7 +27,7 @@ const Intro: React.FC = () => {
                 {/* <span className="text-sm pt-3 text-secondary dark:text-dark-secondary">
                     This site is <span className=" text-primary dark:text-dark-primary">Under Development</span>
                 </span> */}
-                <div className="flex justify-center 2xl:pr-[30%] pt-[80%]">
+                <div className="flex justify-center 2xl:pr-[30%] pt-[80%] xxl:pt-[60%]">
                     <a onClick={(e) => scrollToTop(e, 1)} href="#about">
                         <JumpingMouse />
                     </a>
