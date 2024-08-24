@@ -17,11 +17,11 @@ const Intro: React.FC = () => {
                     Currently working at{' '}
                     <a
                         className="text-primary dark:text-dark-primary border-b border-dashed"
-                        href="https://www.levno.com/"
+                        href="https://www.insourcerecruit.com/"
                         rel="noreferrer"
                         target="_blank"
                     >
-                        Levno
+                        Insource
                     </a>
                 </span>
                 {/* <span className="text-sm pt-3 text-secondary dark:text-dark-secondary">
