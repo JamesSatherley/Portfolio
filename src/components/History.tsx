@@ -40,7 +40,17 @@ const History: React.FC = () => {
                     <div className="hidden flex-col items-center 2xl:flex">
                         <div className="mt-[30px] flex flex-row">
                             <div className="w-56 text-secondary dark:text-dark-secondary text-about">
-                                Sep, 2017 - Current
+                                Aug 2024 - Current
+                            </div>
+                            <div className="border-2 rounded-full h-5 w-5 border-primary dark:border-dark-primary shadow-about dark:shadow-dark-about" />
+                        </div>
+                        <div className="flex flex-row">
+                            <div className="w-56 text-secondary dark:text-dark-secondary" />
+                            <div className="h-[60px] w-0 border-l-2 border-primary dark:border-dark-secondary shadow-about dark:shadow-dark-about-secondary" />
+                        </div>
+                        <div className="flex flex-row">
+                            <div className="w-56 text-secondary dark:text-dark-secondary text-about">
+                                Sep 2023 - Aug 2024
                             </div>
                             <div className="border-2 rounded-full h-5 w-5 border-primary dark:border-dark-primary shadow-about dark:shadow-dark-about" />
                         </div>
@@ -77,7 +87,19 @@ const History: React.FC = () => {
                     </div>
                     <div className="flex flex-col 2xl:w-[24rem] 2xl:px-0 px-4">
                         <span className="text-lg pt-3 text-secondary dark:text-dark-secondary">
-                            Currently, I'm developing both internal and external tools for{' '}
+                            Currently, at{' '}
+                            <a
+                                className="text-primary dark:text-dark-primary border-b border-dashed"
+                                href="https://www.insourcerecruit.com/"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                Insource
+                            </a>
+                            , am part of a team upkeeping a React, PHP web appliation.
+                        </span>
+                        <span className="text-lg pt-3 text-secondary dark:text-dark-secondary">
+                            During my last position I was developing both internal and external tools for{' '}
                             <a
                                 className="text-primary dark:text-dark-primary border-b border-dashed"
                                 href="https://www.levno.com/"
